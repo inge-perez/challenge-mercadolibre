@@ -1,0 +1,78 @@
+@import "../../App.scss";
+
+.results-container {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 16px;
+}
+
+.container-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-flow: wrap;
+  background-color: #fff;
+  padding: 32px;
+  .container-item-img {
+    width: 100%;
+    height: 680px;
+    max-width: 680px;
+    .img-item {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .container-item-detail {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    max-width: 368px;
+    width: 368px;
+    .quantity {
+      font-size: $font-size-2;
+    }
+    .price {
+      font-size: $font-size-7;
+    }
+  }
+  .container-item-description {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+    .description {
+      color: $font-color-grey3;
+      font-size: $font-size-3;
+    }
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: #3483fa;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  &:hover {
+    background-color: #2968c8;
+    border-color: transparent;
+    color: #fff;
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+  }
+}
+
+.container-image {
+}

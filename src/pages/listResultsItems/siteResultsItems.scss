@@ -1,0 +1,55 @@
+@import "../../App.scss";
+
+.results-container {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 16px;
+}
+
+.results-container-item {
+  background-color: $color-white;
+  gap: 16px;
+  display: flex;
+  padding: 16px;
+  border-radius: 6px;
+  border-bottom: 1px solid #e8e8e8;
+  .containter-img {
+    width: 180px;
+    height: 180px;
+    .img-item {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+  }
+  .containter-description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: calc(100% - 300px);
+    .description-price {
+      height: 40px;
+      display: flex;
+      align-items: end;
+      .price {
+        color: inherit;
+        margin-right: 8px;
+        line-height: 1;
+      }
+    }
+  }
+  .containter-address {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: end;
+    .city {
+      line-height: 1;
+      font-size: $font-size-2;
+      color: $font-color-grey2;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, createSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import icSearch from '../assets/ic_Search.png';
@@ -21,7 +21,6 @@ const InputSearch = (props: { query: string; }) => {
                     search: inputValue
                 })}`
             });
-
     }
 
     return (

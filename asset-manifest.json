@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/challenge-mercadolibre/static/css/main.ff18fef4.css",
+    "main.js": "/challenge-mercadolibre/static/js/main.fb6ceadb.js",
+    "static/css/827.24f706fb.chunk.css": "/challenge-mercadolibre/static/css/827.24f706fb.chunk.css",
+    "static/js/827.b3a06c67.chunk.js": "/challenge-mercadolibre/static/js/827.b3a06c67.chunk.js",
+    "static/css/665.028bdd3c.chunk.css": "/challenge-mercadolibre/static/css/665.028bdd3c.chunk.css",
+    "static/js/665.fa16bfae.chunk.js": "/challenge-mercadolibre/static/js/665.fa16bfae.chunk.js",
+    "static/js/787.9c110d4b.chunk.js": "/challenge-mercadolibre/static/js/787.9c110d4b.chunk.js",
+    "static/js/661.b8788993.chunk.js": "/challenge-mercadolibre/static/js/661.b8788993.chunk.js",
+    "static/media/banner.webp": "/challenge-mercadolibre/static/media/banner.860f532eb2a780d716b5.webp",
+    "index.html": "/challenge-mercadolibre/index.html",
+    "main.ff18fef4.css.map": "/challenge-mercadolibre/static/css/main.ff18fef4.css.map",
+    "main.fb6ceadb.js.map": "/challenge-mercadolibre/static/js/main.fb6ceadb.js.map",
+    "827.24f706fb.chunk.css.map": "/challenge-mercadolibre/static/css/827.24f706fb.chunk.css.map",
+    "827.b3a06c67.chunk.js.map": "/challenge-mercadolibre/static/js/827.b3a06c67.chunk.js.map",
+    "665.028bdd3c.chunk.css.map": "/challenge-mercadolibre/static/css/665.028bdd3c.chunk.css.map",
+    "665.fa16bfae.chunk.js.map": "/challenge-mercadolibre/static/js/665.fa16bfae.chunk.js.map",
+    "787.9c110d4b.chunk.js.map": "/challenge-mercadolibre/static/js/787.9c110d4b.chunk.js.map",
+    "661.b8788993.chunk.js.map": "/challenge-mercadolibre/static/js/661.b8788993.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff18fef4.css",
+    "static/js/main.fb6ceadb.js"
+  ]
+}

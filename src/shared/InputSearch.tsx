@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 import { useNavigate, createSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import icSearch from '../assets/ic_Search.png';
-import rutas from '../route-config';
 
-const InputSearch = () => {
+const InputSearch = (props: { query: string; }) => {
     let navigate = useNavigate();
 
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState(props.query);
 
     const handleOnchange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setInputValue(e.target.value);
@@ -15,12 +14,13 @@ const InputSearch = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        navigate({
-            pathname: "/items",
-            search: `${createSearchParams({
-                search: inputValue
-            })}`
-        });
+        inputValue &&
+            navigate({
+                pathname: "/items",
+                search: `${createSearchParams({
+                    search: inputValue
+                })}`
+            });
 
     }
 

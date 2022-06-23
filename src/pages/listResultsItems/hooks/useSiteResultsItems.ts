@@ -9,23 +9,35 @@ const useSiteResultsItems = () => {
     const [searchParam] = useSearchParams();
     const [data, setData] = useState<SearchData>();
 
-    const getQueryParameter = (param: string) => {
+    const _getQueryParameter = (param: string) => {
         return searchParam.get(param);
     }
 
-    const query = getQueryParameter('search') || '';
+    const query = _getQueryParameter('search') || '';
+
+    const _getCategories = (items: any[]): string[] => {
+        const categories: string[] = items.map((item) => {
+            const category = item.category_id;
+            return category;
+        });
+        const categoriesDuplicates = categories.filter((item, index) => categories.indexOf(item) !== index)
+        return categoriesDuplicates.slice(0, texts.QUANTITY_RESULTS);;
+    }
 
     const _doSearch = useCallback(async () => {
         const { data } = await axios.get<SearchResult>(
             `https://api.mercadolibre.com/sites/MLA/search?q=${query}`
         );
+
+        const items = data.results.slice(0, texts.QUANTITY_RESULTS);
+
         const searchData: SearchData = {
             author: {
                 name: texts.NAME,
                 lastname: texts.LAST_NAME,
             },
-            categories: [],
-            items: data.results.slice(0, texts.QUANTITY_RESULTS).map<Item>((item) => ({
+            categories: _getCategories(data?.results),
+            items: items.map<Item>((item) => ({
                 id: item.id,
                 title: item.title,
                 picture: item.thumbnail,
